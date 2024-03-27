@@ -38,6 +38,7 @@ dependencies:
   flame: ^1.15.0
   flame_audio: ^2.1.8
   google_fonts: ^6.2.0
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:

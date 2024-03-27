@@ -1,6 +1,10 @@
+import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:midterm1/constants/global.dart';
 import 'package:midterm1/games/dodge_game.dart';
+import 'package:midterm1/scrrens/mainmenu.dart';
 
 class GameOverMenu extends StatelessWidget {
   static const String ID = 'GameOverMenu';
@@ -33,10 +37,13 @@ class GameOverMenu extends StatelessWidget {
               SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () {
+
+                  FlameAudio.bgm.play(Globals.playingbg);
                   gameRef.reset();
                   gameRef.overlays.remove(GameOverMenu.ID);
-
+                  
                   gameRef.resumeEngine();
+                  
                 },
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
@@ -52,6 +59,7 @@ class GameOverMenu extends StatelessWidget {
                         .displaySmall!
                         .copyWith(color: Colors.white70)),
               ),
+             
             ],
           ),
         ),

@@ -8,7 +8,7 @@ class Globals {
   static const String weakenSprite = 'dead.png';
 
   //background
-  static const String bgSprite = 'bg2.jpg';
+  static const String bgSprite = 'playbg.jpg';
 
   //potion
   static const String potionSprite = 'pots.png';
@@ -25,4 +25,7 @@ class Globals {
 
   static const String potionDrink = 'potion.mp3';
   static const String attackSound = 'attack.mp3';
+  static const String bgmusic = 'bgmusic.mp3';
+  static const String gameOver = 'gameover.mp3';
+  static const String playingbg = 'bgmusicplay.mp3';
 }
